@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Profissional</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="imagem.jpg.jpg" alt="Foto de Perfil" class="profile">
+            <h1>Heiner Robert Santos Saraiva</h1>
+            <p>Desenvolvedor Web / Designer Gráfico / Editor e Criador de Vídeos</p>
+        </div>
+    </header>
+    <section class="sobre">
+        <div class="conteudo">
+            <h2>Sobre Mim</h2>
+            <p>Sou um desenvolvedor apaixonado por criar experiências digitais incríveis. Tenho experiência em HTML, CSS, Photoshop e Adobe Premiere</p>
+        </div>
+    </section>
+    <section class="portfolio">
+        <div class="conteudo">
+            <h2>Meus Projetos</h2>
+            <div class="projects">
+                <div class="project-imagem">
+                    <img src="cardapio.jpg" width="560" alt="Projeto 1">
+                    <h3>Projeto Robert Burgers</h3>
+                    <p>Projeto de design para uma hamburgueria, baseado no gosto do cliente.</p>
+                </div>
+                <div class="project-imagem">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/K-XOiOvSnV0?si=Xjab7MJ_M7hPmpa1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h3>Projeto feito no Adobe Premiere</h3>
+                    <p>Um dos meus primeiros projetos na edição de vídeo, para postagem no Youtube</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #cfcbcb;
+}
+header {
+    background-color: #296103;
+    color: white;
+    padding: 40px 0;
+}
+.profile {
+    width: 150px;
+    border-radius: 50%;
+}
+.conteudo {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+.sobre, .portfolio {
+    background: white;
+    margin: 20px 0;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.project-imagem {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.project-imagem:hover {
+    transform: scale(1.05);
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+</style>
